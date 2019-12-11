@@ -19,7 +19,7 @@ void writeResults(team ATeam[], int topCount, const char filename[]);
 
 int main()
 {
-
+    // declare Vars
     const char team1[] = "duom1.txt",
                team2[] = "duom2.txt",
                results[] = "rez.txt";
@@ -34,17 +34,19 @@ int main()
          AllMembers[allMembersCount],
          ATeam[topCount];
 
+    // read team data
     readTeam(Team1, team1Size, team1);
     readTeam(Team2, team2Size, team2);
+    // join teams
     joinMembers(Team1, team1Size, Team2, team2Size, AllMembers, allMembersCount);
+    // get top 5
     getTopMembers(ATeam, topCount, AllMembers, allMembersCount);
+    // write results
     writeResults(ATeam, topCount, results);
-
 }
 
 void readTeam(team Team[], int teamSize, const char filename[])
 {
-
     ifstream in(filename);
 
     for(int i = 0; i < teamSize; i++) {
