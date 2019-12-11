@@ -1,0 +1,7 @@
+Igor 5.7 26
+Vasilij 5.3 25
+Sergej 5.1 18
+Viktor 5.9 21
+Ivan 5 18
+Fildelfij 6.2 23
+Vachtang 4.8 17
